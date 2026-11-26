@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "description": "/api/* 만 Functions 실행 → 정적 PWA 파일 요청은 무료 무제한, Functions 일일 한도(10만)에 포함되지 않음",
+  "include": ["/api/*"],
+  "exclude": []
+}

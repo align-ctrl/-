@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "hospital": {
+    "name": "에이라인치과병원",
+    "nameEn": "ALIGN DENTAL HOSPITAL",
+    "logoUrl": "/brand/logo-horizontal.png",
+    "markUrl": "/brand/logo-mark.png"
+  },
+  "naverPlaceUrl": "",
+  "texts": {
+    "homeTitle": "소중한 경험을 들려주세요",
+    "homeSubtitle": "에이라인치과병원을 방문해 주셔서 감사합니다.",
+    "homeGuide": "오늘의 진료 경험을 몇 가지 선택하면 AI가 자연스러운 리뷰 초안을 만들어 드립니다.",
+    "homeNotice": "리뷰 작성은 자율이며, 실제 경험을 바탕으로 자유롭게 작성해 주세요.",
+    "estimatedTime": "예상 소요 시간 약 1~2분",
+    "treatmentQuestion": "오늘 어떤 진료를 받으셨나요?",
+    "treatmentHelp": "가장 가까운 항목 하나를 선택해 주세요.",
+    "experienceQuestion": "오늘 진료에서 어떤 점이 좋았나요?",
+    "experienceHelp": "실제로 경험하신 항목만 골라 주세요. 해당 없는 항목은 선택하지 않으셔도 됩니다.",
+    "commentQuestion": "추가로 남기고 싶은 이야기가 있나요?",
+    "commentHelp": "입력하지 않아도 다음 단계로 진행할 수 있어요. 아쉬웠던 점도 그대로 반영됩니다.",
+    "commentPrivacy": "이름, 전화번호, 차트번호 등 개인정보는 입력하지 말아 주세요.",
+    "commentExamples": [
+      "오늘 상담에서 가장 도움이 되었던 점은?",
+      "기억에 남는 직원의 응대가 있었나요?",
+      "추가로 남기고 싶은 이야기가 있나요?"
+    ],
+    "doneTitle": "리뷰 초안이 완성됐어요!",
+    "doneSubtitle": "작성하신 내용을 확인한 뒤 네이버에서 직접 등록해 주세요."
+  },
+  "treatments": [
+    { "id": "consult", "label": "교정 상담", "description": "교정 치료 전 상담", "icon": "messages", "promptLabel": "교정 상담", "enabled": true },
+    { "id": "diagnosis", "label": "정밀검사 및 진단", "description": "X-ray·구강 스캔 등 검사", "icon": "scan", "promptLabel": "교정 정밀검사 및 진단", "enabled": true },
+    { "id": "bonding", "label": "교정 장치 부착", "description": "교정 장치를 처음 붙인 날", "icon": "sparkles", "promptLabel": "교정 장치 부착", "enabled": true },
+    { "id": "monthly", "label": "월 정기 내원", "description": "교정 중 정기 체크", "icon": "calendar", "promptLabel": "교정 정기 진료", "enabled": true },
+    { "id": "repair", "label": "장치 조정 및 수리", "description": "장치 불편·탈락 등 조정", "icon": "wrench", "promptLabel": "교정 장치 조정 및 수리", "enabled": true },
+    { "id": "general", "label": "발치 및 일반 진료", "description": "발치, 충치 등 일반 진료", "icon": "stethoscope", "promptLabel": "발치 및 일반 진료", "enabled": true },
+    { "id": "retainer", "label": "유지장치 점검", "description": "교정 후 유지장치 확인", "icon": "shield", "promptLabel": "유지장치 점검", "enabled": true },
+    { "id": "other", "label": "기타 진료", "description": "그 밖의 진료", "icon": "more", "promptLabel": "치과 진료", "enabled": true }
+  ],
+  "categories": [
+    {
+      "id": "doctor", "name": "의료진", "icon": "doctor", "lead": "진료받을 때",
+      "items": [
+        { "id": "doctor-explain", "label": "설명이 자세했어요.", "treatments": [] },
+        { "id": "doctor-careful", "label": "꼼꼼하게 진료해 주셨어요.", "treatments": [] },
+        { "id": "doctor-answer", "label": "궁금한 점을 잘 설명해 주셨어요.", "treatments": [] }
+      ]
+    },
+    {
+      "id": "staff", "name": "직원", "icon": "heart", "lead": "방문하는 동안",
+      "items": [
+        { "id": "staff-kind", "label": "직원들이 친절했어요.", "treatments": [] },
+        { "id": "staff-guide", "label": "세심하게 안내해 주셨어요.", "treatments": [] },
+        { "id": "staff-comfort", "label": "편안하게 응대해 주셨어요.", "treatments": [] }
+      ]
+    },
+    {
+      "id": "counsel", "name": "상담", "icon": "chat", "lead": "상담에서는",
+      "items": [
+        { "id": "counsel-easy", "label": "이해하기 쉽게 설명해 주셨어요.", "treatments": [] },
+        { "id": "counsel-process", "label": "교정 과정에 대해 자세히 안내받았어요.", "treatments": ["consult", "diagnosis", "bonding", "monthly"] },
+        { "id": "counsel-resolved", "label": "궁금증이 해결됐어요.", "treatments": [] }
+      ]
+    },
+    {
+      "id": "facility", "name": "병원 환경", "icon": "building", "lead": "둘러보니",
+      "items": [
+        { "id": "facility-clean", "label": "병원 내부가 깨끗했어요.", "treatments": [] },
+        { "id": "facility-pleasant", "label": "시설이 쾌적했어요.", "treatments": [] },
+        { "id": "facility-mood", "label": "편안한 분위기였어요.", "treatments": [] }
+      ]
+    },
+    {
+      "id": "experience", "name": "진료 경험", "icon": "clipboard", "lead": "전반적으로",
+      "items": [
+        { "id": "exp-comfort", "label": "진료 과정이 편안했어요.", "treatments": [] },
+        { "id": "exp-system", "label": "체계적으로 관리받는 느낌이었어요.", "treatments": [] },
+        { "id": "exp-attentive", "label": "세심하게 신경 써주셨어요.", "treatments": [] }
+      ]
+    },
+    {
+      "id": "waiting", "name": "대기", "icon": "clock", "lead": "그리고",
+      "items": [
+        { "id": "wait-time", "label": "대기시간이 적절했어요.", "treatments": [] },
+        { "id": "wait-booking", "label": "예약 및 접수가 편리했어요.", "treatments": [] }
+      ]
+    }
+  ],
+  "ai": {
+    "model": "",
+    "temperature": 0.8,
+    "systemPrompt": "당신은 에이라인치과병원의 리뷰 작성 도우미입니다.\n환자가 직접 선택한 실제 진료 경험을 바탕으로 자연스러운 네이버 리뷰 초안을 작성합니다.\n환자가 선택하지 않은 경험은 절대 추가하지 마세요.\n치료 효과, 교정 결과, 진료 만족도 등을 임의로 추측하지 마세요.\n과장된 광고 문구나 허위 사실을 생성하지 마세요.\n환자가 직접 수정하고 사용할 수 있는 자연스러운 문장으로 작성하세요.\n출력은 다음 세 가지 유형으로 구분하세요.\n• 자연스러운 일상형\n• 간결한 후기형\n• 자세한 경험 공유형\n각 유형은 서로 다른 표현을 사용하며 2~4문장으로 작성합니다.\n선택 데이터가 부족하면 부족한 내용을 임의로 채우지 말고 선택된 사실만 활용해 짧게 작성합니다."
+  }
+}

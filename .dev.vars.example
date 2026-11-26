@@ -1,0 +1,8 @@
+# 로컬 테스트용 (npm run preview). 이 파일을 .dev.vars 로 복사하세요. (.dev.vars 는 Git에 올라가지 않음)
+# 실제 배포 값은 Cloudflare 대시보드 → 프로젝트 → Settings → Variables and Secrets 에 입력합니다.
+ADMIN_PASSWORD=change-me-1234
+# ADMIN_TOKEN_SECRET=
+# OPENAI_API_KEY=
+# OPENAI_MODEL=gpt-4.1-mini
+# NAVER_PLACE_URL=https://m.place.naver.com/hospital/0000000000/review/visitor
+# DAILY_AI_LIMIT=300

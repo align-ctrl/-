@@ -1,0 +1,19 @@
+{
+  "name": "ALIGN REVIEW · 에이라인치과병원",
+  "short_name": "ALIGN REVIEW",
+  "description": "에이라인치과병원 방문 경험 리뷰 초안 작성 도우미",
+  "lang": "ko",
+  "id": "/",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "categories": ["health", "medical"],
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
